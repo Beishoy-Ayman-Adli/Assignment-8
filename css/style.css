@@ -72,7 +72,6 @@
     width: 100%;
 }
 .image img{
-    width: 50%;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -112,7 +111,6 @@ body{
     align-items: stretch;
     justify-content: center;
 }
-
 .Pork{
     width: 60%;
     background-color: white;
@@ -146,7 +144,10 @@ body{
   text-align: center;
 }
 
-.stat i { font-size: 22px; margin-bottom: 6px; }
+.stat i {
+   font-size: 22px;
+    margin-bottom: 6px; 
+  }
 .stat:nth-child(1) i { color: #e8622c; }
 .stat:nth-child(2) i { color: #e0442c; }
 .stat:nth-child(3) i { color: #3b82f6; }
@@ -253,18 +254,6 @@ display: flex;
   border-radius: 10px;
 }
 
-.btn{
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
-  border-radius: 15px;
-  background-color: #e0442c;
-  width: 30%;
-  transition: transform 0.3s ease;
-}
 
 .next-recipe-btn {
     margin-top: 15px;
@@ -278,7 +267,6 @@ display: flex;
     width: fit-content;
     transition: transform 0.3s ease;
 }
-
 .next-recipe-btn button {
     background: transparent;
     border: none;
@@ -289,7 +277,6 @@ display: flex;
     line-height: 24px;
     cursor: pointer;
 }
-
 .next-recipe-btn i {
     color: white;
     font-size: 16px;
@@ -302,7 +289,6 @@ display: flex;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 24px;
 }
-
 .tab-btn {
   background: none;
   border: none;
@@ -323,20 +309,18 @@ display: flex;
 }
 
 
-
-.tab-panel { display: none; }
-.tab-panel.active { display: block; }
+.tab-panel {
+   display: none; 
+  }
+.tab-panel.active {
+   display: block; 
+  }
 
 .tab-panel.active {
-  display: block;
-}
-.tab-panel.active {
-  display: block;
   height: 320px;
   overflow-y: auto;
   scrollbar-width: thin;
 }
-
 
 .ingredients-list {
   list-style: none;
@@ -367,23 +351,12 @@ display: flex;
 
 .steps-list {
   list-style: none;
-  counter-reset: step;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.steps-list li {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  counter-increment: step;
-  position: relative;
-  padding: 12px 0 12px 64px;
-  border-bottom: 1px solid #eee; 
-}
-.steps-list li::before {
-  content: counter(step);
+.step-num {
   position: absolute;
   left: 0;
   top: 12px;
@@ -398,8 +371,13 @@ display: flex;
   font-size: 18px;
   font-weight: 600;
 }
-.steps-list h4 {
-  margin: 0 0 4px;
+.steps-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding: 12px 0 12px 64px;
+  border-bottom: 1px solid #eee; 
 }
 .steps-list p {
   display: flex;
@@ -452,24 +430,6 @@ display: flex;
 .nutrition-item .col-lg-6:nth-child(5) i { background: #d9f2e0; color: #2a9d55; }
 .nutrition-item .col-lg-6:nth-child(6) i { background: #f8dde6; color: #c2365f; }
 
-.nut-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #F9FAFB;
-  border-radius: 14px;
-  padding: 18px;
-  height: 100%;
-}
-.nut-card p {
-  flex: 1;
-  margin: 0;
-  color: #555;
-}
-.nut-card span {
-  font-size: 20px;
-  font-weight: 700;
-}
 
 .tips-list {
   list-style: none;
